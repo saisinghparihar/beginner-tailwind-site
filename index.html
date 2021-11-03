@@ -13,7 +13,16 @@
 
     <div class="bg-gradient-to-br from-white to-gray-300">
       <!-- left circle -->
-      <div class="absolute top-0 left-0 opacity-50">
+      <div
+        class="
+          absolute
+          top-0
+          left-0
+          opacity-50
+          transform
+          translate-x-6 translate-y-6
+        "
+      >
         <div
           class="
             absolute
@@ -56,13 +65,15 @@
       <!-- right circle  -->
       <div
         class="
+          hidden
+          lg:block
           absolute
           top-0
           right-0
           mr-48
           transform
           -translate-x-64
-          translate-y-64
+          translate-y-96
           opacity-50
         "
       >
@@ -225,7 +236,7 @@
             >
           </h1>
           <!-- paragraph  -->
-          <p class="text-lg lg:text-2xl">
+          <p class="text-lg lg:text-2xl mb-8 text-gray-700">
             Make good looking designs quickly. All without a single line of CSS
           </p>
           <!-- big button/call to action -->
@@ -248,7 +259,8 @@
               hover:text-yellow-700
               transition
               duration-500
-              mt-16
+              mb-16
+              lg:mb-32
             "
             ><strong class="font-medium tracking-wide"
               >Get the course</strong
@@ -257,7 +269,7 @@
         </div>
 
         <!-- teaser image -->
-        <div class="relative mt-56">
+        <div class="relative">
           <img
             src="https://i.imgur.com/wysbBMS.png"
             alt="teaser-img"
@@ -272,17 +284,19 @@
               px-8
               rounded-md
               border-t-4 border-yellow-500
-              absolute
+              lg:absolute
               text-left
               top-0
               right-0
-              transform
+              lg:transform
               translate-x-4
               -translate-y-5
               mb-8
               lg:mb-0
               shadow-xl
               text-yellow-800
+              lg:mt-0
+              mt-8
             "
           >
             <p>
