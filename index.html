@@ -1169,7 +1169,7 @@
     <!-- What we'll build section === === === === === === === === === === === === === === === -->
     <!--=== === === === === === === === === === === === === === === === === === === === === ===-->
     <div class="bg-gray-300 w-full h-28"></div>
-    <div class="bg-gray-300 lg:pb-40 text-gray-600">
+    <div class="bg-gray-300 pb-40 text-gray-600">
       <div class="container mx-auto px-8">
         <h2 class="text-center justify-center text-5xl text-gray-800">
           What we'll build in this course
@@ -1377,24 +1377,35 @@
     <!--=== === === === === === === === === === === === === === === === === === === === === ===-->
     <!-- Pricing section === === === === === === === === === === === === === === === === === -->
     <!--=== === === === === === === === === === === === === === === === === === === === === ===-->
-    <div class="relative bg-blue-600 py-32 text-blue-200">
+    <div class="relative w-full bg-blue-600 py-32 text-blue-200">
       <!-- grey box -->
 
-      <div class="bg-gray-300 inset-x-0 absolute top-0 h-48"></div>
+      <div class="bg-gray-300 inset-x-0 absolute top-0 h-52"></div>
       <div
         class="
           container
           mx-auto
-          flex
+          flex flex-col
+          lg:flex-row
           px-6
-          lg:px-0
-          space-x-8
+          lg:px-0 lg:space-x-8
           items-center
-          text-xl
+          space-y-4
+          lg:space-y-0
         "
       >
         <!-- left box -->
-        <div class="w-1/3 text-right space-y-4 pt-12 text-2xl">
+        <div
+          class="
+            order-2
+            lg:order-1 lg:w-1/3 lg:text-right
+            text-center
+            justify-center
+            space-y-4
+            text-2xl
+            mt-12
+          "
+        >
           <p>
             <span class="font-bold text-white">75 videos</span> at a smooth pace
           </p>
@@ -1410,8 +1421,10 @@
         <!-- pricing box -->
         <div
           class="
+            order-1
+            lg:order-2
             relative
-            w-1/3
+            lg:w-1/3
             bg-white
             border-8 border-purple-900
             pb-8
@@ -1426,6 +1439,7 @@
             hover:scale-105
             transition
             duration-500
+            w-full
           "
         >
           <!-- beams -->
@@ -1439,7 +1453,7 @@
               -translate-y-full
               items-end
               transform
-              space-x-10
+              lg:space-x-10
             "
           >
             <div
@@ -1494,7 +1508,18 @@
         </div>
 
         <!-- right box -->
-        <div class="w-1/3 space-y-4 text-2xl pt-12">
+        <div
+          class="
+            order-3
+            lg:w-1/3
+            space-y-4
+            text-2xl
+            pt-12
+            text-center
+            lg:text-left
+            justify-center
+          "
+        >
           <p>
             Use the code in
             <span class="font-bold text-white">your projects</span>
@@ -1507,14 +1532,38 @@
             Lifetime <span class="font-bold text-white">refund gaurantee</span>
           </p>
         </div>
-        <div></div>
       </div>
     </div>
-    >
-
     <!--=== === === === === === === === === === === === === === === === === === === === === ===-->
     <!-- FAQ section === === === === === === === === === === === === === === === === === === -->
     <!--=== === === === === === === === === === === === === === === === === === === === === ===-->
+    <div class="bg-gray-500">
+      <div>
+        <h2>The Modules/Videos</h2>
+        <p>9.25 hours of Tailwind learning in 19 modules/75 videos.</p>
+      </div>
+      <div>
+        <div>Getting Started</div>
+        <div>Main Concepts</div>
+        <div>Layout</div>
+        <div>Card Components</div>
+        <div>Button Components</div>
+        <div>Form Components</div>
+        <div>Building a course site</div>
+        <div>Header/Navigation</div>
+        <div>Hero Section</div>
+        <div>Overview Section</div>
+        <div>About Me Section</div>
+        <div>What You'll Build</div>
+        <div>Pricing Section</div>
+        <div>FAQ Section</div>
+        <div>Footer/NewsLetter</div>
+        <div>Fixes</div>
+        <div>Going Beyond</div>
+        <div>Conclusion</div>
+        <div>Copyrights</div>
+      </div>
+    </div>
 
     <!--=== === === === === === === === === === === === === === === === === === === === === ===-->
     <!-- Footer/Newsletter section === === === === === === === === === === === === === === ===-->
